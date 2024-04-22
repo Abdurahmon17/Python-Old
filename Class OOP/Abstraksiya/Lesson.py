@@ -29,6 +29,9 @@ class Uchburchak(Mahum):
         s = math.sqrt(p*(p-self.a)*(p-self.b)*(p-self.c))
         return s
 
+    def __str__(self):
+        return f"Uchburchakning Peremetori: {self.parametor()} \nUning yuzi: {self.yuzi()}"
+
 
 class Torburchak(Mahum):
     def __init__(self,a,b):
@@ -41,11 +44,14 @@ class Torburchak(Mahum):
     def yuzi(self):
         return self.a * self.b
 
+    def __str__(self):
+        return f"To'rtburchakning Peremetori: {self.parametor()} \nUning yuzi: {self.yuzi()}"
 
 
 
 
-
+ob1 = Uchburchak.yuzi()
+print(ob1)
 
 
 
